@@ -1,0 +1,14 @@
+MODEL=C6F0SoZ0N0PnL2
+CMDLINE=console=ttyS1,115200n8 mem=75M@0x0 rmem=53M@0x4B00000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock2 rw mtdparts=jz_sfc:256k(boot),1472k(kernel),2304k(root),-(appfs)
+FLASH_CHIP_ID=0xa1 0x40 0x18
+FLASH_MODEL=FS25Q128F2TFI
+FLASH_SIZE=16MB
+mtd0_boot=SIZE=0x40000,ERASESIZE=0x8000
+mtd1_kernel=SIZE=0x170000,ERASESIZE=0x8000
+mtd2_root=SIZE=0x240000,ERASESIZE=0x8000
+mtd3_appfs=SIZE=0xc10000,ERASESIZE=0x8000
+PROCESSOR=Ingenic Xburst V0.0 FPU V0.0
+HARDWARE=isvp
+MEMORY=71472 kB
+TMPFS=32768 kB
+CAMERA_SENSOR=sensor_gc4653_t31
